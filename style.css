@@ -5,7 +5,6 @@
     grid-area: bar;
     width: 100%;
     height: 128px;
-    margin-left: 32px;
 }
 
 .header {
@@ -16,38 +15,27 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -200px;
-
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-
 }
 
-.nav {
+.naver {
     grid-area: nav;
     height: auto;
     width: 256px;
     position: fixed;
     top: 434px;
-    margin-left: 32px;
 }
 
 .body {
     grid-area: body;
     width: 85%;
     height: auto;
-    margin-left: 15%;
-    margin-top: 32px;
-    margin-right: 0px;
-    padding-right: 0px;
+    padding-left: 15%;
 }
 
 .footer {
     grid-area: footer;
     height: 128px;
     width: 100%;
-    margin-left: 32px;
 }
 
 
@@ -61,16 +49,61 @@
         'footer footer footer footer footer footer footer';
 
     background-color: #1f1e1d;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
     color: #f3eee9;
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
+    margin: 0px;
 }
 
 
 .anchor {
     width: 100%;
 }
+
+@media screen and (max-width: 1910px){
+    .header {
+        grid-area: head;
+        width: 100%;
+        height: 256px;
+        background-image: url("img/background-head.png");
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: center -200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .naver {
+        grid-area: nav;
+        height: auto;
+        width: 85%;
+        position:static;
+        padding-left: 15%;
+    }
+
+    .header {
+        grid-area: head;
+        width: 100%;
+        height: 256px;
+        background-image: url("img/background-head.png");
+        background-repeat: no-repeat;
+        background-size: auto auto;
+        background-position: center -200px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template:
+            'bar bar bar'
+            'head head head'
+            'nav nav nav'
+            'body body body'
+            'footoer footer footer';
+    
+        background-color: #1f1e1d;
+        color: #f3eee9;
+        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
+        margin: 0px;
+    }
+  }
