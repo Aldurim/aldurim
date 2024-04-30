@@ -38,19 +38,32 @@
     width: 100%;
 }
 
+.prolog {
+    grid-area: prolog;
+    width: 100%;
+    height: auto;
+    padding-left: 0%;
+    padding-top: 64px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
 
 .grid-container {
     display: grid;
     grid-template:
         'bar bar bar bar bar bar bar'
         'head head head head head head head'
+        'prolog prolog prolog prolog prolog prolog prolog'
         'body body body body body body body'
         'body body body body body body body'
         'footer footer footer footer footer footer footer';
 
     background-color: #1f1e1d;
     color: #f3eee9;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace;
     width: 100%;
     margin: 0px;
 }
@@ -73,6 +86,7 @@
 }
 
 @media only screen and (max-width: 760px) {
+
     .naver {
         grid-area: nav;.header {
             grid-area: head;
@@ -84,9 +98,14 @@
             background-position: center -200px;
         }
         height: auto;
-        width: 85%;
+        width: 90%;
         position:static;
-        padding-left: 15%;
+        padding-left: 5%;
+    }
+
+    .anchor {
+        padding-left: 25%;
+        width: 100%;
     }
 
     .header {
@@ -99,19 +118,50 @@
         background-position: center -200px;
     }
 
+    .footer {
+        grid-area: footer;
+        height: 128px;
+        width: 100%;
+        position: fixed;
+        top: 97%;
+        background-color: #1f1e1d;
+        z-index: 1;
+    }
+
+    .prolog {
+        grid-area: prolog;
+        width: 90%;
+        height: auto;
+        padding-left: 5%;
+        padding-top: 64px;
+    }
+
+    .hide{
+        visibility:visible;
+    }
+
     .grid-container {
         display: grid;
         grid-template:
             'bar bar bar'
             'head head head'
+            'prolog prolog prolog'
             'nav nav nav'
             'body body body'
-            'footoer footer footer';
+            'footer footer footer';
     
         background-color: #1f1e1d;
         color: #f3eee9;
-        font-family: 'Courier New', Courier, monospace;
+
+        font-size: large;
         width: 100%;
         margin: 0px;
+    }
+    
+    .body {
+        grid-area: body;
+        width: 90%;
+        height: auto;
+        padding-left: 5%;
     }
   }
