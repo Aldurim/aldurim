@@ -1,5 +1,7 @@
 
-
+a{
+    color: aquamarine;
+}
 
 .bar{
     grid-area: bar;
