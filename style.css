@@ -164,12 +164,14 @@ hr{
 
     .footer {
         grid-area: footer;
-        height: 128px;
+        height: 256px;
         width: 100%;
         position: fixed;
         top: 97%;
         background-color: #1f1e1d;
-        z-index: 1;
+        background-image: linear-gradient(#1f1e1d00,#1f1e1d);
+  
+        z-index: 0;
     }
 
     .prolog {
