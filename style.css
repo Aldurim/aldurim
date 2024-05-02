@@ -87,7 +87,7 @@ hr{
         'body body body body body body body'
         'footer footer footer footer footer footer footer';
 
-    background-color: #1f1e1d;
+    background-color: rgb(31, 30, 29);
     color: #f3eee9;
     font-family:'Courier New', Courier, monospace;
     width: 100%;
@@ -164,14 +164,17 @@ hr{
 
     .footer {
         grid-area: footer;
-        height: 256px;
+        height: 24px;
         width: 100%;
         position: fixed;
         top: 97%;
-        background-color: #1f1e1d;
-        background-image: linear-gradient(#1f1e1d00,#1f1e1d);
+        background-image: -webkit-linear-gradient(top,
+        rgba(31, 30, 29,0) 0%, 
+        rgba(31, 30, 29,0.7) 50%,
+        rgba(31, 30, 29,0.9) 60%,
+        rgba(31, 30, 29,1) 100%);
   
-        z-index: 0;
+        z-index: 1;
     }
 
     .prolog {
@@ -179,6 +182,8 @@ hr{
         width: 90%;
         height: auto;
         padding-left: 5%;
+        margin-top: 0px;
+        padding-top: 32px;
     }
 
     .hide{
