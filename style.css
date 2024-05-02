@@ -6,6 +6,7 @@ a{
 
 hr{
     color: #4e4a48;
+    -webkit-text-fill-color: #4e4a48;
 }
 .portrait{
     border-radius: 50%;
