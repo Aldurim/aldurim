@@ -18,6 +18,13 @@ hr{
     height: 200px;
 }
 
+.portrait-small{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 15%; 
+}
+
 .bar{
     grid-area: bar;
     width: 100%;
