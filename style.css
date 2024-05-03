@@ -42,6 +42,7 @@ hr{
     margin-top: 32px;
     width: 200px;
     height: 200px;
+    background-color: #292726;
 }
 
 .portrait-small{
@@ -274,6 +275,7 @@ hr{
         margin-top: 32px;
         width: 200px;
         height: 200px;
+        background-color: #292726;
     }
 
     .mobile-hide{
