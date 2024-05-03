@@ -1,6 +1,8 @@
 
 a{
     color: rgb(184, 176, 128);
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .button-link {
@@ -76,6 +78,7 @@ hr{
     margin-left: 15%; 
     margin-top: 64px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 .naver {
@@ -118,6 +121,9 @@ hr{
 
 .hide{
     visibility: hidden;
+    padding-top: 0px;
+    margin: 0px;
+    margin-top: 0px;
 }
 
 .mobile-hide{
@@ -169,7 +175,9 @@ hr{
 
     .header_text{
         margin-left: 15%; 
-        margin-top: 32px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 
     hr{
@@ -229,6 +237,8 @@ hr{
 
     .hide{
         visibility:visible;
+        padding-top: 0px;
+        margin-top: 0px;
     }
 
     .bar{
