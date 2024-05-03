@@ -3,6 +3,32 @@ a{
     color: rgb(184, 176, 128);
 }
 
+.button-link {
+    background-color: #1f1e1d;
+    text-decoration: none;
+    color: #b8b080;
+    padding: 16px;
+    border-top: 1px solid #b8b080;
+    border-right: 1px solid #b8b080;
+    border-bottom: 1px solid #b8b080;
+    border-left: 1px solid #b8b080;
+
+    border-radius: 4px;
+
+    transition-duration: 0.4s;
+  }
+
+  
+  .button-link:hover {
+    background-color: #b8b080;
+    color: #1f1e1d;
+    padding: 16px;
+    border-top: 1px solid #1f1e1d;
+    border-right: 1px solid #1f1e1d;
+    border-bottom: 1px solid #1f1e1d;
+    border-left: 1px solid #1f1e1d;
+  }
+
 
 hr{
     color: #4e4a48;
@@ -13,7 +39,7 @@ hr{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 64px;
+    margin-top: 32px;
     width: 200px;
     height: 200px;
 }
@@ -49,13 +75,16 @@ hr{
 .naver {
     grid-area: nav;
     height: auto;
-    width: 256px;
+    width: 16%;
     position: fixed;
     top: 464px;
     padding-left: 1%;
+    margin-left: 1.5%;
     background-color: #292726;
     padding-bottom: 1%;
     border-radius: 8px;
+
+
 }
 
 .body {
@@ -80,8 +109,13 @@ hr{
     padding-top: 64px;
 }
 
+
 .hide{
     visibility: hidden;
+}
+
+.mobile-hide{
+    visibility: visible;
 }
 
 
@@ -222,11 +256,14 @@ hr{
     }
     
     .body {
+        position:fixed;
         grid-area: body;
-        width: 90%;
-        height: auto;
-        padding-left: 5%;
-        padding-right: 5%;
+        width:0px;
+        height: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        visibility: hidden;
+        z-index: -1;
     }
 
     .text_section{
@@ -244,5 +281,9 @@ hr{
         margin-top: 32px;
         width: 200px;
         height: 200px;
+    }
+
+    .mobile-hide{
+        visibility: hidden;
     }
   }
