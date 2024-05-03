@@ -47,9 +47,13 @@ hr{
 
 .portrait-small{
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin-left: 15%; 
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: 15%;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: #292726;
 }
 
 .bar{
@@ -71,6 +75,7 @@ hr{
 .header_text{
     margin-left: 15%; 
     margin-top: 64px;
+    margin-bottom: 0px;
 }
 
 .naver {
