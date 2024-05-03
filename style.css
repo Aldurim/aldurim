@@ -49,7 +49,8 @@ hr{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-left: 0;
+    display: block;
+    margin-left: 15%;
     margin-top: 0px;
     padding-top: 0px;
     background-color: #292726;
@@ -290,6 +291,7 @@ hr{
         border-radius: 50%;
         width: 100px;
         height: 100px;
+        margin-left: 15%;
         margin-top: 0px;
         padding-top: 0px;
         background-color: #292726;
