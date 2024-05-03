@@ -286,4 +286,16 @@ hr{
     .mobile-hide{
         visibility: hidden;
     }
+
+    .portrait-small{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: 15%;
+        margin-top: 0px;
+        padding-top: 0px;
+        background-color: #292726;
+    }
+    
   }
