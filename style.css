@@ -35,6 +35,8 @@ a{
 hr{
     color: #4e4a48;
     -webkit-text-fill-color: #4e4a48;
+    background-color: #4e4a48;
+    border: solid #4e4a48 1px;
 }
 .portrait{
     border-radius: 50%;
